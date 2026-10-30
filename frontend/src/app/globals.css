@@ -1,0 +1,109 @@
+:root {
+  color-scheme: light dark;
+  --line: color-mix(in srgb, currentColor 22%, transparent);
+}
+
+body {
+  margin: 0;
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.nav {
+  display: flex;
+  gap: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.muted {
+  opacity: 0.65;
+  font-size: 0.875rem;
+}
+
+.error {
+  color: #c62828;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: block;
+  padding: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.card h2 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.05rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.pager {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.stack {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 420px;
+}
+
+.stack label {
+  display: grid;
+  gap: 0.25rem;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  padding: 0.5rem 0.75rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: progress;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.5rem 0.25rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
